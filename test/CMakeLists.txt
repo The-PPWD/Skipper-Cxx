@@ -1,10 +1,15 @@
 add_executable(
     skippercxxtest
-    constants/pi.cpp
+    test.cpp
 )
 
 target_link_libraries(
     skippercxxtest
     PRIVATE
     skippercxx
+)
+
+add_test(
+    NAME skippercxxtest
+    COMMAND skippercxxtest
 )
